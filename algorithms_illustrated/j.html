@@ -1,0 +1,37 @@
+           
+                <h3> Nigerian Foods Api</h3>               
+                <p>  Api for some nigerian foods and thier nutritional information </p>
+                <p>  Foods are classfied into 9 categories </p>
+                
+                <ul>
+                    <li> rice_based </li>
+                    <li> soups_and_stews </li>
+                    <li> bean_based </li>
+                    <li> meat_based </li>
+                    <li> yam_based </li>
+                    <li> cassava_based </li>
+                    <li> snacks </li>
+                    <li> beverages </li>
+                    <li> others </li>
+                </ul>
+                         
+                   <h4> Endpoints</h4> 
+
+                   <h5> api/foods/&lt;foodname&gt;</h5>
+                   <p> Get a json response of the specified food<br>
+                    example:<br>
+                    <pre> { foodname: 
+    { category: foodcategory, 
+      img_url: link to image of food,
+      nutritonal_information: 
+    {'calories': value , carbs: value, protein: value, fat: value, sodium: value, sugar: value}
+    }
+}</pre>
+                   URL: https://www.nigerianfoods.herokuapp.com/api/foods/&lt;foodname&gt; <br> HTTP method: GET<br> </p>
+
+                   <h5> api/foods</h5>
+                   <p> Get a json response of every food in the database <br> URL: https://www.nigerianfoods.herokuapp.com/api/foods <br> HTTP method: GET<br> </p>
+                   
+                   <h5>api/food_category/&lt;categoryname&gt;</h5>
+                   <p> Get a json response of a list of all the foods that belong to a particular category <br> URL: https://www.nigerianfoods.herokuapp.com/api/food_category/&lt;categoryname&gt <br> HTTP method: GET<br> </p>
+          
